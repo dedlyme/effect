@@ -1,17 +1,19 @@
 import React from 'react';
 
-function ToDo () {
-    const todo = {
-    userId:1,
-    id: 1,
-    title:"delectus aut autem",
-    completed: false,
-    }
+function ToDo (props) {
+   const [runcuks, setRuncuks] = useState(props.completed)
+function handleChange(){
+setRuncuks(event.target.checked)
+}
+
+
     return (
         <>
-   <p></p>
-   <p></p>
-   <p></p>
+  <p>UserId:{props.userId}</p>
+  <p>Id:{props.id}</p>
+  <p>{props.title}</p>
+  <input type="checkbox" checked={runcuks} onChange={handleChange}></input>
+  
    </>
        )};
 

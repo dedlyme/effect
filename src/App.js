@@ -1,11 +1,18 @@
+import React from "react";
+import ToDo from "./ToDo";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
-  );
+const toDo = {
+  userId: 1,
+  id: 1,
+  title: "delectus aut autem",
+  completed: false,
 }
+  return (
+    <ToDo {...ToDo}
+    
+    />
+  );
+};
 
 export default App;
