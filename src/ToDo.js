@@ -1,9 +1,11 @@
+import {useState} from 'react';
 import React from 'react';
+
 
 function ToDo (props) {
    const [runcuks, setRuncuks] = useState(props.completed)
-function handleChange(){
-setRuncuks(event.target.checked)
+function handleChange(event){
+setRuncuks(event.target.checked);
 }
 
 
