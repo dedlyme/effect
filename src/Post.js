@@ -3,10 +3,10 @@ import React from "react";
 function post(props){
     return (
         <div>
-            <p>userId: {props.userId}</p>
-            <p>id: {props.id}</p>
-            <p>title: {props.title}</p>
-            <p>body: {props.body}</p>
+            <p>Id: {props.Id}</p>
+            <p>name: {props.name}</p>
+            <p>username: {props.username}</p>
+            <p>email: {props.email}</p>
         </div>
     )
 }

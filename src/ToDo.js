@@ -11,9 +11,10 @@ setRuncuks(event.target.checked);
 
     return (
         <>
-  <p>UserId:{props.userId}</p>
+  <p>name:{props.name}</p>
   <p>Id:{props.id}</p>
-  <p>{props.title}</p>
+  <p>username{props.username}</p>
+    <p>email{props.email}</p>
   <input type="checkbox" checked={runcuks} onChange={handleChange}></input>
   
    </>

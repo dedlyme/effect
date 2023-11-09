@@ -7,7 +7,7 @@ function App() {
 const [toDo, setToDo] = useState({});
 useEffect(() =>{
  async function getToDo (){
- const  response = await fetch("https://jsonplaceholder.typicode.com/todos/69");
+ const  response = await fetch("https://jsonplaceholder.typicode.com/users");
 
  const data = await response.json();
  setToDo(data);   
